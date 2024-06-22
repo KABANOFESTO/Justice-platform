@@ -95,12 +95,14 @@ Please select a language:
 
 router.post("/ussd", (req, res) => {
   const { sessionId, serviceCode, phoneNumber, text } = req.body;
-  console.log('####################', req.body);
+  console.log('Information', JSON.stringify(req.body, null, 2));
 
   let response = ussdResponses[text] || `Dear customer, the network is experiencing technical problems and your request was not processed. Please try again later.`;
 
-  res.set("Content-Type: text/plain");
+  res.set("Content-Type", "text/plain"); // Corrected Content-Type header
   res.send(response);
 });
+
+
 
 module.exports = router;
