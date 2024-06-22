@@ -35,6 +35,8 @@ Please select a language:
   "1*3*2": `Itegeko numero 206/11/2003:
 1. Yego
 2. Oya`,
+  "1*3*2*1": `Murakoze guhitamo`,
+  "1*3*2*2": `Murakoze guhitamo`,
   "2*1": `Civil law:
 1. Law Number 101/10/2024
 2. Law Number 205/11/2003`,
