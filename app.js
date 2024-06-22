@@ -1,6 +1,8 @@
 const express = require("express");
 const ussdRoute = require("./index");
 const bodyParser = require("body-parser");
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 8000;
